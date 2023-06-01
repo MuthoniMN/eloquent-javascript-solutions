@@ -40,3 +40,8 @@ When `num` is 15, the output displayed on the console is `"Fizz"` which is true.
 This happened because in an if block once JavaScript finds a true statement, it doesn't check the other statements. This means that the program stopped executing after the first condition which is `num % 3 === 0`.
 
 So we have to make sure that the first condition checks whether the number is divisible by 3 and 5.
+
+## Concepts Covered
+
+- Conditional Statements
+- Loops
