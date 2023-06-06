@@ -10,3 +10,8 @@ console.log(min(0, -10));
 1. Declare the function with two parameters
 2. if the first number is less than the second number, return it
 3. else return the second number
+
+## Concepts Covered
+
+- Functions
+- Conditionals

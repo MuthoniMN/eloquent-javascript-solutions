@@ -20,3 +20,14 @@ console.log(isEven(-1));
 // → ??
 ```
 
+## Pseudocode
+
+1. Create a function that takes a number, n as the argument
+2. check if the number is greater than or equal to 0
+3.  if the number, n is equal to 0, return true
+4. else if number, n is equal to 1, return false
+5. else recursively call the function
+
+## Concepts Covered
+- Functions
+- Conditionals
