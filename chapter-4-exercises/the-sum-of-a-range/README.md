@@ -24,3 +24,7 @@
 1. add a step parameter that has a default value of 1
 2. check if the start is greater than the end
 3. increment the loop value using the step given
+
+## Concepts Covered
+- Loops
+- Arrays

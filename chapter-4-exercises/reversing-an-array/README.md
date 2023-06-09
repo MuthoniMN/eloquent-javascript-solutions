@@ -10,3 +10,22 @@ reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 ```
+
+## Pseudocode
+### `reverseArray`
+1. create the `reverseArray()` function 
+2. create a variable whose value is an empty array
+3. loop through the array backwards
+4. push the individual elements to the empty array 
+5. return the array 
+
+### `reverseArrayInPlace`
+1. create the `reverseArrayInPlace()` function
+2. loop through the array backwards
+3. push the individual elements to the array
+4. loop through the first half of the array
+5. remove the elements in the first half
+
+## Concepts Covered
+- Loops
+- Arrays
