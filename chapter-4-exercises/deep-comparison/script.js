@@ -16,8 +16,8 @@ function deepEqual(a, b) {
         if (a.length !== b.length) {
             return false
         } else {
-            for (let i = 0; i < array.length; i++) {
-                deepEqual(a[i], b[i])   
+            for (let i = 0; i < a.length; i++) {
+                return deepEqual(a[i], b[i])   
             }
         }
     }
@@ -27,17 +27,26 @@ function deepEqual(a, b) {
     if (keys1 !== keys2) {
         return false
     }else{
+        let boolArr = []
         let props = Object.keys(a)
 
-        props.forEach((prop) => {
-            if (typeof a.prop === 'object' && typeof b.prop === "object") {
-                deepEqual(a.prop, b.prop)
-            } else if (a.prop !== b.prop) {
-                return false
+        for (let i = 0; i < props.length; i++) {
+            let val1 = a[props[i]]
+            let val2 = b[props[i]]
+            if(!deepEqual(val1, val2)){
+                boolArr.push (false)
+            }else{
+                boolArr.push (true)
             }
-        })
+        } 
+
+        let bool = boolArr.filter((b) => b === true)
+        if (bool.length === props.length) {
+            return true
+        } else {
+            return false
+        }
     }
-    return true
 }
 
 let obj = {here: {is: "an"}, object: 2};
