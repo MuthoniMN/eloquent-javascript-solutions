@@ -9,16 +9,16 @@ I'll be working through the Eloquent JavaScript book and I created this repo to 
 	 - [x] FizzBuzz [Check It Out](/chapter-2-exercises/fizzbuzz/README)
 	 - [x] Chessboard [Check It Out](/chapter-2-exercises/chessboard/README)
 
-- [ ] Chapter 3 
-	- [ ] Minimum [Check It Out](/chapter-3-exercises/minimum/README)
-	- [ ] Recursion [Check It Out](/chapter-3-exercises/recursion/README)
-	- [ ] Bean Counting [Check It Out](/chapter-3-exercises/bean-counting/README)
+- [x] Chapter 3 
+	- [x] Minimum [Check It Out](/chapter-3-exercises/minimum/README)
+	- [x] Recursion [Check It Out](/chapter-3-exercises/recursion/README)
+	- [x] Bean Counting [Check It Out](/chapter-3-exercises/bean-counting/README)
 
-- [ ] Chapter 4
-	- [ ] The sum of a range [Check It Out](/chapter-4-exercises/the-sum-of-a-range/README)
-	- [ ] Reversing an Array [Check It Out](/chapter-4-exercises/reversing-an-array/README)
+- [x] Chapter 4
+	- [x] The sum of a range [Check It Out](/chapter-4-exercises/the-sum-of-a-range/README)
+	- [x] Reversing an Array [Check It Out](/chapter-4-exercises/reversing-an-array/README)
 	- [ ] A List [Check It Out](/chapter-4-exercises/a-list/README)
-	- [ ] Deep Comparison [Check It Out](/chapter-4-exercises/deep-comparison/README)
+	- [x] Deep Comparison [Check It Out](/chapter-4-exercises/deep-comparison/README)
 
 - [ ] Chapter 5
 	- [ ] Flattening [Check It Out](/chapter-5-exercises/flattening/README)

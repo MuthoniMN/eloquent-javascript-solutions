@@ -16,3 +16,18 @@ console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
 // → true
 ```
 
+### Steps I Took
+
+1. checking if the objects are the same data type
+2. checking for null and undefined
+3. checking for primitive data types
+4. checking for arrays
+5. recursively calling the function when looping through the array
+6. checking if the object keys match
+7. checking if the objects value match by recursively calling the function
+
+### Concepts Covered
+
+- Conditions
+- Loops
+- Recursion
