@@ -1,52 +1,48 @@
-function deepEqual(a, b) {
+function deepEqual(obj1, obj2) {
     // check if they are the same data type
-    if (typeof a !== typeof b) {
-        return false
+    if(typeof obj1 !== typeof obj2){
+       return false
     }
-    // check for null or undefined
-    else if(a === null || b === null || a === undefined || b === undefined){
-        return a === b
-    }
-    // check if they are primitive data types
-    else if (typeof a !== 'object'  || typeof b !== 'object') {
-        return a === b
-    }
-    // check if they are arrays
-    else if (Array.isArray(a) || Array.isArray(b)) {
-        if (a.length !== b.length) {
-            return false
-        } else {
-            for (let i = 0; i < a.length; i++) {
-                return deepEqual(a[i], b[i])   
+    // check for null and undefined
+    else if (obj1 === null || obj2 === null || obj1 === undefined || obj2 === undefined) {
+        return obj1 === obj2
+    } 
+    // check for primitive data types
+    else if (typeof obj1 !== "object" && typeof obj2 === "object") {
+        return obj1 === obj2
+    } 
+    // check for arrays
+    else if(Array.isArray(obj1) && Array.isArray(obj2)){
+        if (obj1.length === obj2.length) {
+            for (let i = 0; i < obj.length; i++) {
+                return deepEqual(obj1[i], obj2[i])
             }
-        }
-    }
-    // check if they have the same properties
-    let keys1 = Object.keys(a).toString()
-    let keys2 = Object.keys(b).toString()
-    if (keys1 !== keys2) {
-        return false
-    }else{
-        let boolArr = []
-        let props = Object.keys(a)
 
-        for (let i = 0; i < props.length; i++) {
-            let val1 = a[props[i]]
-            let val2 = b[props[i]]
-            if(!deepEqual(val1, val2)){
-                boolArr.push (false)
-            }else{
-                boolArr.push (true)
-            }
-        } 
-
-        let bool = boolArr.filter((b) => b === true)
-        if (bool.length === props.length) {
-            return true
         } else {
             return false
         }
     }
+    // check for objects
+    let keys1 = Object.keys(obj1)
+    let keys2 = Object.keys(obj2)
+    let propArr = []
+    if (keys1.length === keys2.length) {
+        for (const key in obj1) {
+            if (obj2.hasOwnProperty(key)) {
+                propArr.push(key)
+            }
+        }
+    
+        if (propArr.length === keys1.length) {
+                for (const prop in propArr) {
+                    return deepEqual(obj1[prop], obj2[prop])
+                }
+            } else {
+                return false
+            }
+    } else {
+        return false
+    }    
 }
 
 let obj = {here: {is: "an"}, object: 2};
