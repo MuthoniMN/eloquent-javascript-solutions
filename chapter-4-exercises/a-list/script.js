@@ -45,13 +45,28 @@ function prepend(list, element) {
 
 console.log(prepend(arrayToList([1, 2, 3]), "I'M THE ONE"));
 
-function nth(list, num) {
-    let valueArray = listToArray(list)
+// function nth(list, num) {
+//     let valueArray = listToArray(list)
 
-    if (valueArray.includes(num)) {
-        return valueArray.indexOf(num)
+//     if (valueArray.includes(num)) {
+//         return valueArray[num]
+//     }
+//     else{
+//         return undefined
+//     }
+// }
+
+
+function nth(list, num) {
+    let position = 0
+
+    while (position !== num) {
+        return nth
     }
-    else{
-        return undefineds
-    }
+
+    position++
+
+    return position
 }
+
+console.log(nth(arrayToList([1, 2, 3]), 2));
