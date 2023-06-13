@@ -15,3 +15,19 @@ function arrayToList(array) {
 }
 
 console.log(arrayToList([1, 2, 3]));
+
+//list to array
+function listToArray(list) {
+
+    let listArray = []
+
+    for (const key in list) {
+        if (key === 'value') {
+            listArray.push(list[key])
+        }else{
+            listToArray(list[key])
+        }
+    }
+}
+
+listToArray(arrayToList([1, 2, 3]))
