@@ -34,7 +34,7 @@ function listToArray(list) {
 
 console.log(listToArray(arrayToList([1, 2, 3])));
 
-function prepend(list, element) {
+function prepend(element, list) {
     list = {
         value: element,
         rest: list
@@ -43,30 +43,27 @@ function prepend(list, element) {
     return list
 }
 
-console.log(prepend(arrayToList([1, 2, 3]), "I'M THE ONE"));
-
-// function nth(list, num) {
-//     let valueArray = listToArray(list)
-
-//     if (valueArray.includes(num)) {
-//         return valueArray[num]
-//     }
-//     else{
-//         return undefined
-//     }
-// }
-
+console.log(prepend("I'M THE ONE", arrayToList([1, 2, 3]) ));
 
 function nth(list, num) {
-    let position = 0
+    let valueArray = listToArray(list)
 
-    while (position !== num) {
-        return nth
+    if (valueArray.length > num) {
+        return valueArray[num]
     }
-
-    position++
-
-    return position
+    else{
+        return undefined
+    }
 }
 
+
 console.log(nth(arrayToList([1, 2, 3]), 2));
+
+console.log(arrayToList([10, 20]));
+// → {value: 10, rest: {value: 20, rest: null}}
+console.log(listToArray(arrayToList([10, 20, 30])));
+// → [10, 20, 30]
+console.log(prepend(10, prepend(20, null)));
+// → {value: 10, rest: {value: 20, rest: null}}
+console.log(nth(arrayToList([10, 20, 30]), 1));
+// → 20
