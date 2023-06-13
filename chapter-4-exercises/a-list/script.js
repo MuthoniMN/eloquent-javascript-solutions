@@ -20,14 +20,16 @@ console.log(arrayToList([1, 2, 3]));
 function listToArray(list) {
 
     let listArray = []
+    let current = list
 
-    for (const key in list) {
-        if (key === 'value') {
-            listArray.push(list[key])
-        }else{
-            listToArray(list[key])
-        }
+    while (current !== null) {
+        // add the values
+        listArray.push(current.value)
+        // access the nested lists
+        current = current.rest
     }
+
+    return listArray
 }
 
-listToArray(arrayToList([1, 2, 3]))
+console.log(listToArray(arrayToList([1, 2, 3])));
