@@ -8,35 +8,39 @@ function deepEqual(obj1, obj2) {
         return obj1 === obj2
     } 
     // check for primitive data types
-    else if (typeof obj1 !== "object" && typeof obj2 === "object") {
+    else if (typeof obj1 !== "object" && typeof obj2 !== "object") {
         return obj1 === obj2
     } 
     // check for arrays
     else if(Array.isArray(obj1) && Array.isArray(obj2)){
-        if (obj1.length === obj2.length) {
-            for (let i = 0; i < obj.length; i++) {
-                return deepEqual(obj1[i], obj2[i])
-            }
-
+        if (obj1.length !== obj2.length) {
+            return false
         } else {
+            for (let i = 0; i < obj.length; i++) {
+                if(!deepEqual(obj1[i], obj2[i])){
+                    return false
+                }
+            }
+        }
+    }else{
+            // check for objects
+        let keys1 = Object.keys(obj1).toString()
+        let keys2 = Object.keys(obj2).toString()
+
+        if (keys1 === keys2 ){
+            for (let key in obj1) {
+                let val1 = obj1[key]
+                let val2 = obj2[key]
+                if(!deepEqual(val1, val2)){
+                    return false
+                }
+            }
+        }else {
             return false
         }
     }
-    // check for objects
-    let keys1 = Object.keys(obj1).toString()
-    let keys2 = Object.keys(obj2).toString()
 
-    if (keys1.length === keys2.length) {
-        if (keys1 === keys2 ){
-            for (const key in obj1) {
-                return deepEqual(obj1[key], obj2[key])
-            }
-        }else {
-                return false
-        }
-    } else {
-        return false
-    }    
+    return true
 }
 
 let obj = {here: {is: "an"}, object: 2};
