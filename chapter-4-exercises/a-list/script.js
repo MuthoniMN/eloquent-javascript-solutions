@@ -33,3 +33,14 @@ function listToArray(list) {
 }
 
 console.log(listToArray(arrayToList([1, 2, 3])));
+
+function prepend(list, element) {
+    list = {
+        value: element,
+        rest: list
+    }
+
+    return list
+}
+
+console.log(prepend(arrayToList([1, 2, 3]), "I'M THE ONE"));
