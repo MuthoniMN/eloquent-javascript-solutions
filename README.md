@@ -17,7 +17,7 @@ I'll be working through the Eloquent JavaScript book and I created this repo to 
 - [x] Chapter 4
 	- [x] The sum of a range [Check It Out](/chapter-4-exercises/the-sum-of-a-range/README)
 	- [x] Reversing an Array [Check It Out](/chapter-4-exercises/reversing-an-array/README)
-	- [ ] A List [Check It Out](/chapter-4-exercises/a-list/README)
+	- [x] A List [Check It Out](/chapter-4-exercises/a-list/README)
 	- [x] Deep Comparison [Check It Out](/chapter-4-exercises/deep-comparison/README)
 
 - [ ] Chapter 5
