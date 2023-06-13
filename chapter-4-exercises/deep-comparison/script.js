@@ -23,23 +23,17 @@ function deepEqual(obj1, obj2) {
         }
     }
     // check for objects
-    let keys1 = Object.keys(obj1)
-    let keys2 = Object.keys(obj2)
-    let propArr = []
+    let keys1 = Object.keys(obj1).toString()
+    let keys2 = Object.keys(obj2).toString()
+
     if (keys1.length === keys2.length) {
-        for (const key in obj1) {
-            if (obj2.hasOwnProperty(key)) {
-                propArr.push(key)
+        if (keys1 === keys2 ){
+            for (const key in obj1) {
+                return deepEqual(obj1[key], obj2[key])
             }
-        }
-    
-        if (propArr.length === keys1.length) {
-                for (const prop in propArr) {
-                    return deepEqual(obj1[prop], obj2[prop])
-                }
-            } else {
+        }else {
                 return false
-            }
+        }
     } else {
         return false
     }    
