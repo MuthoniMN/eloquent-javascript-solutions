@@ -44,3 +44,14 @@ function prepend(list, element) {
 }
 
 console.log(prepend(arrayToList([1, 2, 3]), "I'M THE ONE"));
+
+function nth(list, num) {
+    let valueArray = listToArray(list)
+
+    if (valueArray.includes(num)) {
+        return valueArray.indexOf(num)
+    }
+    else{
+        return undefineds
+    }
+}
