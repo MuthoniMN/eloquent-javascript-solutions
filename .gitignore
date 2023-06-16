@@ -1,1 +1,4 @@
-obsidian/
+.obsidian/
+.vscode/
+.trash/
+* .json
