@@ -20,11 +20,11 @@ I'll be working through the Eloquent JavaScript book and I created this repo to 
 	- [x] A List [Check It Out](/chapter-4-exercises/a-list/README)
 	- [x] Deep Comparison [Check It Out](/chapter-4-exercises/deep-comparison/README)
 
-- [ ] Chapter 5
-	- [ ] Flattening [Check It Out](/chapter-5-exercises/flattening/README)
-	- [ ] Your Own Loop [Check It Out](/chapter-5-exercises/your-own-loop/README)
-	- [ ] Everything [Check It Out](/chapter-5-exercises/everything/README)
-	- [ ] Dominant Writing Direction [Check It Out](/chapter-5-exercises/dominant-writing-direction/README)
+- [x] Chapter 5
+	- [x] Flattening [Check It Out](/chapter-5-exercises/flattening/README)
+	- [x] Your Own Loop [Check It Out](/chapter-5-exercises/your-own-loop/README)
+	- [x] Everything [Check It Out](/chapter-5-exercises/everything/README)
+	- [x] Dominant Writing Direction [Check It Out](/chapter-5-exercises/dominant-writing-direction/README)
 
 - [ ] Chapter 6
 	- [ ] A Vector Type [Check It Out](/chapter-6-exercises/a-vector-type/README)
